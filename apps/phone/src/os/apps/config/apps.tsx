@@ -8,6 +8,7 @@ import { MessagesApp } from '../../../apps/messages/components/MessagesApp';
 import { ExampleAppWrapper } from '../../../apps/example/components/ExampleAppWrapper';
 import { TaskRabbitAppWrapper } from '../../../apps/taskrabbit/TaskRabbitAppWrapper';
 import { GarageAppWrapper } from '../../../apps/garage/GarageAppWrapper';
+import { BankingAppWrapper } from '../../../apps/banking/BankingAppWrapper';
 import { MarketplaceApp } from '../../../apps/marketplace/components/MarketplaceApp';
 import { NotesApp } from '../../../apps/notes/NotesApp';
 import CameraApp from '../../../apps/camera/components/CameraApp';
@@ -206,6 +207,16 @@ export const APPS: IAppConfig[] = [
     path: '/garage',
     Route: () => (
       <AppRoute id="GARAGE" path="/garage" component={GarageAppWrapper} emitOnOpen={false} />
+    ),
+  },
+  {
+    id: 'BANKING',
+    nameLocale: 'APPS_BANKING',
+    backgroundColor: blue[500],
+    color: blue[50],
+    path: '/banking',
+    Route: () => (
+      <AppRoute id="BANKING" path="/banking" component={BankingAppWrapper} emitOnOpen={false} />
     ),
   },
 ];
