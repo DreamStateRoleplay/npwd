@@ -7,6 +7,7 @@ import { SettingsApp } from '../../../apps/settings/components/SettingsApp';
 import { MessagesApp } from '../../../apps/messages/components/MessagesApp';
 import { ExampleAppWrapper } from '../../../apps/example/components/ExampleAppWrapper';
 import { TaskRabbitAppWrapper } from '../../../apps/taskrabbit/TaskRabbitAppWrapper';
+import { GarageAppWrapper } from '../../../apps/garage/GarageAppWrapper';
 import { MarketplaceApp } from '../../../apps/marketplace/components/MarketplaceApp';
 import { NotesApp } from '../../../apps/notes/NotesApp';
 import CameraApp from '../../../apps/camera/components/CameraApp';
@@ -195,6 +196,16 @@ export const APPS: IAppConfig[] = [
         component={TaskRabbitAppWrapper}
         emitOnOpen={false}
       />
+    ),
+  },
+  {
+    id: 'GARAGE',
+    nameLocale: 'APPS_GARAGE',
+    backgroundColor: blue[500],
+    color: blue[50],
+    path: '/garage',
+    Route: () => (
+      <AppRoute id="GARAGE" path="/garage" component={GarageAppWrapper} emitOnOpen={false} />
     ),
   },
 ];
