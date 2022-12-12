@@ -6,6 +6,7 @@ import { CalculatorApp } from '../../../apps/calculator/components/CalculatorApp
 import { SettingsApp } from '../../../apps/settings/components/SettingsApp';
 import { MessagesApp } from '../../../apps/messages/components/MessagesApp';
 import { ExampleAppWrapper } from '../../../apps/example/components/ExampleAppWrapper';
+import { TaskRabbitAppWrapper } from '../../../apps/taskrabbit/TaskRabbitAppWrapper';
 import { MarketplaceApp } from '../../../apps/marketplace/components/MarketplaceApp';
 import { NotesApp } from '../../../apps/notes/NotesApp';
 import CameraApp from '../../../apps/camera/components/CameraApp';
@@ -180,6 +181,21 @@ export const APPS: IAppConfig[] = [
     color: common.white,
     path: '/camera',
     Route: () => <AppRoute id="CAMERA" path="/camera" component={CameraApp} emitOnOpen={false} />,
+  },
+  {
+    id: 'TASKRABBIT',
+    nameLocale: 'APPS_TASKRABBIT',
+    backgroundColor: '#03bb85',
+    color: blue[50],
+    path: '/taskrabbit',
+    Route: () => (
+      <AppRoute
+        id="TASKRABBIT"
+        path="/taskrabbit"
+        component={TaskRabbitAppWrapper}
+        emitOnOpen={false}
+      />
+    ),
   },
 ];
 
