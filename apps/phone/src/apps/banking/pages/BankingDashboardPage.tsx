@@ -63,12 +63,14 @@ export const BankingDashboardPage: React.FC = () => {
     } else {
       fetchNui<ServerPromiseResp<Account>>(BankingEvents.GET_ACCOUNTS)
         .then((resp) => {
+          console.log({ resp });
           if (resp.data) {
             setBalance(<span>{formatMoney(resp.data.bank)}</span>);
             setIban(resp.data.iban);
           }
         })
-        .catch(() => {
+        .catch((ex) => {
+          console.log({ ex });
           let notification: INotification = {
             app: 'BANKING',
             id: 'banking:transaction:error',

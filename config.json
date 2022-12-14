@@ -1,24 +1,24 @@
 {
   "PhoneAsItem": {
     "enabled": false,
-    "exportResource": "my-core-resource",
-    "exportFunction": "myCheckerFunction"
+    "exportResource": "dsrp_main",
+    "exportFunction": "hasPhone"
   },
   "general": {
-    "useResourceIntegration": false,
-    "toggleKey": "f1",
+    "useResourceIntegration": true,
+    "toggleKey": "m",
     "toggleCommand": "phone",
     "defaultLanguage": "en"
   },
   "profanityFilter": {
-    "enabled": false,
-    "badWords": ["esx"]
+    "enabled": true,
+    "badWords": ["nigger", "transgender", "nigg3r", "Nigger", "Nigg3r", "retard"]
   },
   "database": {
-    "useIdentifierPrefix": false,
+    "useIdentifierPrefix": true,
     "playerTable": "users",
     "identifierColumn": "identifier",
-    "identifierType": "license",
+    "identifierType": "char",
     "profileQueries": true,
     "phoneNumberColumn": "phone_number"
   },
@@ -29,7 +29,7 @@
   },
   "defaultContacts": [],
   "disabledApps": [],
-  "apps": ["pefcl"],
+  "apps": [],
   "voiceMessage": {
     "enabled": false,
     "authorizationHeader": "PE-Secret",
