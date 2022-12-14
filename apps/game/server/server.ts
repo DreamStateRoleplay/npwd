@@ -19,6 +19,9 @@ import './twitter/twitter.controller';
 import './match/match.controller';
 import './darkchat/darkchat.controller';
 import './audio/audio.controller';
+import './banking/banking.controller';
+import './debtkollector/debtkollector.controller';
+import './garage/garage.controller';
 
 // setup exports
 import './bridge/sv_exports';
